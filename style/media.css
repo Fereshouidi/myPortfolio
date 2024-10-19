@@ -88,7 +88,7 @@
         background-position: 80% center;
     }
 
-    /* #more-detail #content{
-        overflow: hidden;
-      } */
+    #more-detail #content{
+        scrollbar-width: none;
+      }
 }

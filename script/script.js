@@ -45,7 +45,9 @@ const project_list = [
 ]
 
 const show_image = (image) => {
+    const more_details_content = document.getElementById("content");
     const show_img = document.getElementById('show-img');
+    more_details_content.style.overflow = 'hidden';
     show_img.style.display = 'flex';
     show_img.innerHTML = `
         <i class="fas fa-times" onclick="close_image()"></i>

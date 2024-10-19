@@ -446,7 +446,7 @@ h2{
   padding-top: 45px;
 }
 #more-detail #content #project-details-header{
-  width: 100%;
+  width: 90%;
   height: auto;
   border-bottom: 1px solid white;
   background-color: white;
@@ -454,8 +454,9 @@ h2{
   justify-content: center;
   align-items: center;
   padding: 5px;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 5%;
+  z-index: 999;
 }
 #more-detail #content #project-name{
   font-size: 20px;
