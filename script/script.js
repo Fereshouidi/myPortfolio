@@ -74,6 +74,9 @@ const show_more_detail = (id, index) => {
           <h2>discription</h2>
           <p>${project_list[index].discription}</p>
         </div>
+        <div id='show-img'>
+            
+        </div>
       </div>`;
 
     more_details_div.innerHTML = container_div;
