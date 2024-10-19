@@ -87,4 +87,8 @@
     #main{
         background-position: 80% center;
     }
+
+    #more-detail #content{
+        overflow: hidden;
+      }
 }

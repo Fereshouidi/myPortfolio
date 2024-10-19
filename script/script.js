@@ -21,7 +21,7 @@ const project_list = [
     {
         id: 1,
         tittle: 'messager web app',
-        image: './images/_89240508-33eb-4b20-bf1f-ab32b4d3bf1a.jpg',
+        image: 'images/_89240508-33eb-4b20-bf1f-ab32b4d3bf1a.jpg',
         short_discription: "application for chatting",
     },
     {
