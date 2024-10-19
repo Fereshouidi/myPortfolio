@@ -44,14 +44,27 @@ const project_list = [
     },
 ]
 
+const show_image = (image) => {
+    const show_img = document.getElementById('show-img');
+    show_img.style.display = 'flex';
+    show_img.innerHTML = `
+        <i class="fas fa-times" onclick="close_image()"></i>
+        <img src="${image}" alt="">
+    `;
+}
+const close_image = () => {
+    const show_img = document.getElementById('show-img');
+    show_img.style.display = 'none';
+}
+
 const show_more_detail = (id, index) => {
     const more_details_div = document.getElementById("more-detail");
     const images_container = document.getElementById('images-container');
     more_details_div.style.display = 'flex';
     
     let imagesHTML = '';
-    project_list[index].image.forEach((image_) => {
-        imagesHTML += `<img src="${image_}" alt="">`;
+    project_list[index].image.forEach((image_, index) => {
+        imagesHTML += `<img src="${image_}" onClick="show_image('${image_}')" alt="">`;
     });
 
     const container_div = `
@@ -75,7 +88,6 @@ const show_more_detail = (id, index) => {
           <p>${project_list[index].discription}</p>
         </div>
         <div id='show-img'>
-            
         </div>
       </div>`;
 
