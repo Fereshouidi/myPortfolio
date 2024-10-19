@@ -72,6 +72,14 @@
         font-size: 10px;
     }
 
+    .main span{
+        font-size: 8px;
+    }
+
+    .main h2{
+        font-size: 22px;
+    }
+
     .not-matter .social-icons a{
         font-size: 10px;
     }
