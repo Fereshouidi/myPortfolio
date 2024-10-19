@@ -441,6 +441,10 @@ h2{
 .fa-times:hover{
   background-color: rgb(235, 1, 1);
 }
+
+#more-detail #content{
+  padding-top: 45px;
+}
 #more-detail #content #project-details-header{
   width: 100%;
   height: auto;
