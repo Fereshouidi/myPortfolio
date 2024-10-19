@@ -276,17 +276,20 @@ h2{
 }
 *.more_details:hover{
   color: #601cfc;
+  cursor: pointer;
 }
 .project-image{
   display: flex;
   justify-content: center;
   width: 100%;
   border-radius: 10px;
+  background-color: #1581DD;
 }
 .img_prg{ 
   width: 100%;
   height: 200px;
   border-radius: 10px;
+  object-fit: cover;
 }
 .project-info{
   padding: 1em;
@@ -380,4 +383,51 @@ h2{
 }
 .not-matter .social-icons{
   /* background: #ff99; */
+}
+
+
+
+/* #more-detail{
+  position: fixed;
+  z-index: 999;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  height: 95%;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+} */
+
+#more-detail{
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(252, 252, 252, 0.342);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#more-detail #content{
+  background-color: rgb(248, 248, 248);
+  width: 90%;
+  height: 90%;
+  overflow-y: scroll;
+  overflow: hidden;
+  box-shadow: 0 5px 15px black;
+  position: relative;
+}
+
+.fa-times{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: red;
+  border: 0.2px solid white;
+  color: white;
 }
