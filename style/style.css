@@ -472,6 +472,13 @@ h2{
   width: 100%;
   height: 100%;
   padding: 5px;
+  margin: 10px; 
+}
+#more-detail #content p{
+  font-size: 13px;
+  width: 100%;
+  height: 100%;
+  padding: 0 5%;
   /* margin: 20px;  */
 }
 #more-detail #content #images #images-container{
@@ -522,10 +529,97 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor:   ;
+  cursor: pointer;
 }
 #more-detail #content #show-img img{
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+
+/* تنسيق قسم تسليط الضوء على المشروع */
+#project-highlight {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+/* تنسيق الفقرة الخاصة بتسليط الضوء */
+.project-highlight-description {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+  margin: 0; /* إزالة المساحة السفلية */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تنسيق عام للعناصر */
+.project-section {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+/* تنسيق الفقرة */
+.project-description {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* تنسيق عناوين الأقسام */
+.section-title {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* تنسيق القوائم */
+.feature-list, .tech-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.feature-list li, .tech-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* تنسيق النص الغامق داخل القوائم */
+.feature-list li strong, .tech-list li strong {
+  color: #000;
+  font-weight: bold;
 }

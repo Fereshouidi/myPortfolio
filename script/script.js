@@ -45,8 +45,39 @@ const project_list = [
                   'images/att.xhYp09tL8MonMzatB6tUFZshVHAs4kDEANF4Srtsc7Y.jpg', 
                 ],
         short_discription: "application for chatting",
-        about: 'example about',
-        discription: 'example discription'
+        about: `<div id="project-highlight" class="project-section">
+  <p class="project-highlight-description">
+    This project highlights my ability to create user-friendly, efficient web applications tailored to real-time communication needs. 
+    The messenger app was built from the ground up with performance and scalability in mind, ensuring that even large volumes of messages are handled smoothly. 
+    I also focused on creating an intuitive interface that enhances the user experience.
+  </p>
+</div>
+`,
+        discription: `<div id="project-about" class="project-section">
+  <p class="project-description">
+    This web-based messaging app was designed to provide users with a seamless and fast way to communicate in real-time. 
+    Built with the latest web technologies, the app allows for instant messaging, image sharing, and responsive user interactions. 
+    The app demonstrates my ability to develop scalable and high-performance applications suitable for any communication platform.
+  </p>
+
+  <h3 id="key-features-title" class="section-title">Key Features:</h3>
+  <ul id="key-features-list" class="feature-list">
+    <li><strong>Instant Messaging:</strong> Users can send and receive text messages in real-time, without delays, across multiple devices.</li>
+    <li><strong>Image Sharing:</strong> The app allows users to share images easily, integrating them into the chat stream in a fluid manner.</li>
+    <li><strong>Responsive Design:</strong> Fully responsive across all screen sizes, ensuring an optimized experience whether on desktop or mobile.</li>
+    <li><strong>Real-time Updates:</strong> Automatic polling keeps the conversation updated without the need to refresh the page.</li>
+    <li><strong>Backend Integration:</strong> Data is securely managed through a MongoDB database, ensuring scalability and security for all conversations.</li>
+  </ul>
+
+  <h3 id="technologies-title" class="section-title">Technologies Used:</h3>
+  <ul id="technologies-list" class="tech-list">
+    <li><strong>Frontend:</strong> React, Next.js, HTML5, CSS3</li>
+    <li><strong>Backend:</strong> Node.js, Express.js</li>
+    <li><strong>Database:</strong> MongoDB, Mongoose</li>
+    <li><strong>Other:</strong> Axios for API requests, Cloud storage for handling image uploads.</li>
+  </ul>
+</div>
+`
     },
     {
         id: 2,
@@ -104,7 +135,7 @@ const show_more_detail = (id, index) => {
         </div>
         <div id="about">
           <h2>about</h2>
-          <p>${project_list[index].about}</p>
+          <p><pre>${project_list[index].about}</pre></p>
         </div>
         <div id="images">
           <h2>images</h2>
