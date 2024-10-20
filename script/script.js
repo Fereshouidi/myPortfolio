@@ -1,5 +1,6 @@
 
 
+
 let ulExistance = false
 const handleUL = () => {
     const ul = document.getElementById("ul");
@@ -17,11 +18,32 @@ const handleUL = () => {
 
 
 
+
 const project_list = [
     {
         id: 1,
         tittle: 'messager web app',
-        image: ['images/messager_web_app.jpg', ''],
+        image: [
+                  'images/messager_web_app.jpg', 
+                  'images/att.7TpWR8dR9OO-7N3EmHtqko59V0KAh-4fJmSYcbVjus8.jpg',
+                  'images/att.aNLnK8CIPNO4h97b_mGnaHIcL-8k_SocrRjNBX3IR3A.jpg',
+                  'images/att.CRI0zATBmR15cvjvy1MAjxhQRqjp33JVc8N7v77xs_g (1).jpg',
+                  'images/att.CRI0zATBmR15cvjvy1MAjxhQRqjp33JVc8N7v77xs_g.jpg',
+                  'images/att.EIGVzJaTCkkM8-svykq4Pv9FdTruM3q_C9-5_L9eojk (1).jpg',
+                  'images/att.EIGVzJaTCkkM8-svykq4Pv9FdTruM3q_C9-5_L9eojk.jpg',
+                  'images/att.n--5tG54-av8aVHkEtO8jV_cNcplRHapaKSN7UwQ_6w (1).jpg',
+                  'images/att.P4rHBl4gwx6zbUk6zHM8uJ6u6jiOFjKXS9cD1H32WBA (1).jpg',
+                  'images/att.P4rHBl4gwx6zbUk6zHM8uJ6u6jiOFjKXS9cD1H32WBA (1).jpg',
+                  'images/att.tw0fKLXJLPzI9t1sIpoRpq68cG2Co-6Y3jxXh_jSHCY (1).jpg',
+                  'images/att.tw0fKLXJLPzI9t1sIpoRpq68cG2Co-6Y3jxXh_jSHCY.jpg',
+                  'images/att.upgwFYJmuq5MYd_WNwkx-5Z8zVUDr-9MGYWN9RglR64 (1).jpg', 
+                  'images/att.upgwFYJmuq5MYd_WNwkx-5Z8zVUDr-9MGYWN9RglR64.jpg', 
+                  'images/att.vt_q_VZU0KFyDOM2ZY0C2WChLh3k2nT5KbbtJy5_Px4 (1).jpg', 
+                  'images/att.vt_q_VZU0KFyDOM2ZY0C2WChLh3k2nT5KbbtJy5_Px4.jpg', 
+                  'images/att.WsKyL_sMRK5sqrTDK3zMB1uAneQ_dNT3hpHVkTEGWKg.jpg', 
+                  'images/att.xhYp09tL8MonMzatB6tUFZshVHAs4kDEANF4Srtsc7Y.jpg', 
+                  'images/att.xhYp09tL8MonMzatB6tUFZshVHAs4kDEANF4Srtsc7Y.jpg', 
+                ],
         short_discription: "application for chatting",
         about: 'example about',
         discription: 'example discription'
@@ -44,6 +66,9 @@ const project_list = [
     },
 ]
 
+
+
+
 const show_image = (image) => {
     const more_details_content = document.getElementById("content");
     const show_img = document.getElementById('show-img');
@@ -55,8 +80,10 @@ const show_image = (image) => {
     `;
 }
 const close_image = () => {
+    const more_details_content = document.getElementById("content");
     const show_img = document.getElementById('show-img');
     show_img.style.display = 'none';
+    more_details_content.style.overflow = 'scroll';
 }
 
 const show_more_detail = (id, index) => {
