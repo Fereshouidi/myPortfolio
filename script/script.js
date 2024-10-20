@@ -135,7 +135,7 @@ const show_more_detail = (id, index) => {
         </div>
         <div id="about">
           <h2>about</h2>
-          <p><pre>${project_list[index].about}</pre></p>
+          <p>${project_list[index].about}</p>
         </div>
         <div id="images">
           <h2>images</h2>
